@@ -15,11 +15,15 @@
     const lastname = faker.person.lastName();
     const username = faker.internet.userName({ firstName: firstname, lastName: lastname }).toLowerCase();
     const bio = faker.lorem.lines(2);
+
+    const foodImage = faker.image.food();
 </script>
 
 <template>
     <div>
     <h1 class="text-2xl font-bold text-center text-green-600">{{ recipeTitle }}</h1>
+    <img :src="foodImage" alt="Food Image" class="mx-auto my-6 w-96 h-96 object-cover rounded-xl shadow-lg"/>
+
     <p class="text-lg font-medium text-green-600">>Prep Time: <span class="font-normal text-green-500">{{ prepTime }}</span></p>
     <p class="text-lg font-medium text-green-600">Cooking Time: <span class="font-normal text-green-500">{{ cookTime }}</span></p>
     <p class="text-lg font-medium text-green-600">Number of Servings: <span class="font-normal text-green-500"> {{ servings }}</span></p>
