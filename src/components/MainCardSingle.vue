@@ -22,7 +22,7 @@
 <template>
     <div>
     <h1 class="text-2xl font-bold text-center text-green-600">{{ recipeTitle }}</h1>
-    <img class="object-fill h-40 w-90 rounded-xl shadow-lg" v-bind:src="faker.image.urlLoremFlickr({category: 'food', height: 45, width: 96})" />
+    <img class="object-fill h-400 w-900 rounded-xl shadow-lg" v-bind:src="faker.image.urlLoremFlickr({category: 'food', height: 450, width: 960})" />
 
     <p class="text-lg font-medium text-green-600">>Prep Time: <span class="font-normal text-green-500">{{ prepTime }}</span></p>
     <p class="text-lg font-medium text-green-600">Cooking Time: <span class="font-normal text-green-500">{{ cookTime }}</span></p>
